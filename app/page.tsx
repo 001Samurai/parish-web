@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import {
   Search,
@@ -272,14 +272,6 @@ export default function ParishHomepage() {
 
   const prevNews = () => {
     setCurrentNewsIndex((prev) => (prev - 1 + newsItems.length) % newsItems.length)
-  }
-
-  const nextMinistry = () => {
-    setCurrentMinistryIndex((prev) => (prev + 1) % ministries.length)
-  }
-
-  const prevMinistry = () => {
-    setCurrentMinistryIndex((prev) => (prev - 1 + ministries.length) % ministries.length)
   }
 
   return (
